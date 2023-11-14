@@ -48,13 +48,13 @@ NEGATIVE_PROMPT=""
 
 You can run the server locally or with docker.
 
-### how to run it locally.
+### running it locally
 ```python
 pip install requirements.txt
 python scripts/server.py
 ```
 
-### how to run it with docker.
+### running it with docker
 ```python
 docker build -t animated-video-builder:latest .
 ```
@@ -68,7 +68,6 @@ def create_video_request(audio_file_path, full_video=True, video_length=8, video
                           video_style="VIDEO_STYLE", clip_method="Loop", negative_prompt="NEGATIVE_PROMPT",
                           generate_lyric_prompts=False, use_local_generation=False, video_file_path="./finished_videos/video.mp4"):
 
-    # Set the Flask server URL
     server_url = # replace with your ip.
 
     data = {
