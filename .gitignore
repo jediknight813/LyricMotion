@@ -7,3 +7,4 @@ __pycache__
 finished_videos/*
 !finished_videos/finished_videos_go_here.txt
 test.py
+.DS_Store
