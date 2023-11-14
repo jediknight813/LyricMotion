@@ -117,8 +117,6 @@ Sure, here is the updated image description: a {{~gen 'context' temperature=0.8 
         theme=theme
     )
 
-    print(response)
-
     return response.variables()["context"]
 
 
