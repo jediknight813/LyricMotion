@@ -94,6 +94,7 @@ def prompt_judge_agent(prompt, theme):
     context_detection = guidance('''<|im_start|>user
 Given a lyric describe what it would look like as an image.
 Just describe what a static scene description would look like, you don't have to make it.
+The description must be not be NSFW.
 Here's the Lyric: "{{prompt}}"
         
 <|im_start|>assistant
@@ -118,5 +119,4 @@ Sure, here is the updated image description: a {{~gen 'context' temperature=0.8 
     )
 
     return response.variables()["context"]
-
 
