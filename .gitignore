@@ -1,1 +1,9 @@
 .env
+!audio/audio_clips_go_here.txt
+audio/*
+video_clips/*
+!video_clips/video_clips_go_here.txt
+__pycache__
+finished_videos/*
+!finished_videos/finished_videos_go_here.txt
+test.py

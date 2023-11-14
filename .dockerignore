@@ -1,0 +1,8 @@
+audio/*
+!audio/
+
+finished_videos/*
+!finished_videos/
+
+video_clips/*
+!video_clips/
