@@ -7,8 +7,6 @@ Bring your lyrics to life with dynamic animations synchronized to the rhythm of 
 https://github.com/jediknight813/animated-lyric-video-builder/assets/17935336/a232aa0a-02a3-402c-bffa-f03cb32ac1d1
 
 # LyricMotion Prerequisites
-## Before using LyricMotion, ensure you have the following prerequisites set up:
-
 ## Before you start using LyricMotion, make sure you have the following requirements ready:
 
 ### llama-cpp-python Server
