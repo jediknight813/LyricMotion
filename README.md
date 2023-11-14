@@ -15,19 +15,23 @@ llama-cpp-python: Follow the instructions in the repository to set up and run th
 
 https://github.com/abetlen/llama-cpp-python
 
-
 ### Stable Diffusion WebUI with Hotshot-XL-Automatic1111 Extension
 
 Stable Diffusion WebUI: Clone the repository and install dependencies following the provided instructions.
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
-
 Hotshot-XL-Automatic1111: Clone and setup this extension into the extensions directory of Stable Diffusion WebUI.
 
 https://github.com/hotshotco/Hotshot-XL-Automatic1111
 
-Note: Make sure both the llama-cpp-python server and the Stable Diffusion WebUI with the Hotshot-XL-Automatic1111 extension are up and running before using LyricMotion.
+### whisper-asr-webservice
+
+whisper-asr-webservice: Clone the repository and install dependencies following the provided instructions, or run with docker.
+
+https://github.com/ahmetoner/whisper-asr-webservice
+
+Note: Make surellama-cpp-python server and the Stable Diffusion WebUI with the Hotshot-XL-Automatic1111 extension and whisper-asr-webservice are up and running before using LyricMotion.
 
 # Setup
 
@@ -48,20 +52,20 @@ NEGATIVE_PROMPT=""
 
 You can run the server locally or with docker.
 
-### running it locally
+### Running it locally
 ```python
 pip install requirements.txt
 python scripts/server.py
 ```
 
-### running it with docker
+### Running it with docker
 ```python
 docker build -t animated-video-builder:latest .
 ```
 
 ### Creating a video
 
-you can create a video with the server running with this function.
+You can create a video with the server running with this function.
 
 ```python
 def create_video_request(audio_file_path, full_video=True, video_length=8, video_fps=8,
