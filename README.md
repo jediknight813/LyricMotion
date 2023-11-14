@@ -11,13 +11,16 @@ Before you start using LyricMotion, make sure you have the following requirement
 
 ### llama-cpp-python Server
 llama-cpp-python: Follow the instructions in the repository to set up and run the server.
-
+```
 https://github.com/abetlen/llama-cpp-python
+```
 
 ## Stable Diffusion WebUI with Hotshot-XL-Automatic1111 Extension
 
 Stable Diffusion WebUI: Clone the repository and install dependencies following the provided instructions.
+```
 https://github.com/AUTOMATIC1111/stable-diffusion-webui
+```
 
 Hotshot-XL-Automatic1111: Clone and setup this extension into the extensions directory of Stable Diffusion WebUI.
 ```
