@@ -20,6 +20,7 @@ Stable Diffusion WebUI: Clone the repository and install dependencies following 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 Hotshot-XL-Automatic1111: Clone and setup this extension into the extensions directory of Stable Diffusion WebUI.
+```
 https://github.com/hotshotco/Hotshot-XL-Automatic1111
-
+```
 Note: Make sure both the llama-cpp-python server and the Stable Diffusion WebUI with the Hotshot-XL-Automatic1111 extension are up and running before using LyricMotion.
