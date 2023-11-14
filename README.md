@@ -1,11 +1,13 @@
 # LyricMotion
-![tmph7i6quqp](https://github.com/jediknight813/animated-lyric-video-builder/assets/17935336/8c2be248-27cb-43e2-9e60-35e63be26845)
+![tmph7i6quqp](https://github.com/jediknight813/LyricMotion/assets/17935336/82327eb1-dd61-4a21-a686-d6b3cb604777)
+
 
 LyricMotion is an innovative animated lyric video builder that transforms music into visually stunning AI-generated videos. 
 Bring your lyrics to life with dynamic animations synchronized to the rhythm of your music.
 
 
-https://github.com/jediknight813/animated-lyric-video-builder/assets/17935336/a232aa0a-02a3-402c-bffa-f03cb32ac1d1
+https://github.com/jediknight813/LyricMotion/assets/17935336/420c2098-69b3-48c4-b6b7-20c3a3a72eb5
+
 
 # LyricMotion Prerequisites
 Before you start using LyricMotion, make sure you have the following requirements ready:
