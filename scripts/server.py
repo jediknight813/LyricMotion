@@ -58,7 +58,6 @@ def create_lyric_video():
         print(error_message)
         return {"message": error_message}
         
-    print(video_file_path, " here is what was returned.")
     return send_file(video_file_path, as_attachment=True)
 
 
