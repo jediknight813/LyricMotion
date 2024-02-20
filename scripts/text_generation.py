@@ -93,8 +93,8 @@ def prompt_judge_agent(prompt, theme):
 
     context_detection = guidance('''<|im_start|>user
 Given a lyric describe what it would look like as an image.
-Just describe what a static scene description would look like, you don't have to make it.
-The description must be not be NSFW.
+Just describe what a static image description would look like, you don't have to make it.
+The image description must be SFW.
 Here's the Lyric: "{{prompt}}"
         
 <|im_start|>assistant
@@ -108,15 +108,17 @@ Nice, now remix the image description above to match this theme: {{theme}}, stic
 |im_start|>assistant
 Sure, the remixed description of the image is: a {{~gen 'context' temperature=0.8 max_tokens=100 stop='\n'}}
 <|im_start|>user
-And finally rewrite the image description to remove any unessary details, it should be comma seperated details about the image in this order: Character, Action, Scene, Theme.
+And finally rewrite the image description to be in this order: Character, Action, Scene, details, make sure it matches the theme: {{theme}}.
 |im_start|>assistant
 Sure, here is the updated image description: a {{~gen 'context' temperature=0.8 max_tokens=100 stop='\n'}}              
 ''')
+
 
     response = context_detection(
         prompt=prompt,
         theme=theme
     )
 
+    print(response)
+    
     return response.variables()["context"]
-

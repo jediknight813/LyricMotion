@@ -3,8 +3,9 @@ python-dotenv
 moviepy
 pillow
 numpy
-guidance
+guidance==0.0.64
 # locked to this version because guidance needs to be updated.
 openai==0.28.1
 Flask
 gevent
+websocket-client

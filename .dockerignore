@@ -2,7 +2,9 @@ audio/*
 !audio/
 
 finished_videos/*
-!finished_videos/
+!finished_videos/finished_videos_go_here.txt
 
 video_clips/*
-!video_clips/
+!video_clips/video_clips_go_here.txt
+
+.venv
