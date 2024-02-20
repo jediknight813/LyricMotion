@@ -70,9 +70,6 @@ def loop_clip(duration, clip_path, save_path, video_framerate):
     # final_video.write_videofile(save_path, fps=video_framerate)
 
 
-loop_clip(10, "./video_clips/0.mp4", "test.mp4", 25)
-
-
 def stretch_clip(desired_duration, clip_path, save_path, video_framerate):
     clip = VideoFileClip(clip_path)
 
