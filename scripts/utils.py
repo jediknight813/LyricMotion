@@ -46,7 +46,7 @@ def loop_clip(duration, clip_path, save_path, video_framerate):
     clips_in_loop = []
     video = VideoFileClip(clip_path)
     print("Video framerate:", video.fps)
-    video.duration = 6
+    video.duration = 5
     reversed_video = video.fx(vfx.time_mirror)
 
     loops_needed = 0
@@ -64,10 +64,13 @@ def loop_clip(duration, clip_path, save_path, video_framerate):
 
     final_video = concatenate_videoclips(clips_in_loop, method="compose")
     final_video = final_video.set_duration(duration)
-    # final_video.write_videofile(
-    #     save_path, fps=video_framerate, codec="libx264", audio_codec="aac"
-    # )
-    final_video.write_videofile(save_path, fps=video_framerate)
+    final_video.write_videofile(
+        save_path, fps=video_framerate, codec="libx264", audio_codec="aac"
+    )
+    # final_video.write_videofile(save_path, fps=video_framerate)
+
+
+loop_clip(10, "./video_clips/0.mp4", "test.mp4", 25)
 
 
 def stretch_clip(desired_duration, clip_path, save_path, video_framerate):
